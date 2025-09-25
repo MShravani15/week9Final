@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Push to Docker Hub') {
             steps {
-                bat 'docker tag registration:v1 shravani152004\registration:v1'
+                bat 'docker tag registration:v1 shravani152004/registration:v1'
                 bat 'docker push shravani152004/registration:v1'
             }
         }
